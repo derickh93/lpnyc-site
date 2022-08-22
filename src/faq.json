@@ -1,0 +1,27 @@
+[
+  {
+    "id": 0,
+    "question": "How do i sign up?",
+    "answer": "Simply click the schedule button to create an account and get started."
+  },
+  {
+    "id": 1,
+    "question": "What are your prices?",
+    "answer": "Check out our price list here."
+  },
+  {
+    "id": 2,
+    "question": "What form of payments do you accept?",
+    "answer": "We accept cash on delivery and credit cards(Visa,Mastercard, American Express, Discover)."
+  },
+  {
+    "id": 3,
+    "question": "How do I schedule a collection?",
+    "answer": "Simply click the schedule button to create an account and get started. If you are a new customer you can book your first order at https://washgolaundry.netlify.app or via our mobile app (available for iOS and Android). Just follow the on-screen instructions and you'll have clean laundry in no-time!"
+  },
+  {
+    "id": 4,
+    "question": "How much does your service cost?",
+    "answer": "The price is $1.25/ LB. There is a $25 minimum."
+  }
+]

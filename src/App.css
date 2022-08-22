@@ -1,38 +1,174 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Open Sans", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a:link {
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.btn-xxl {
+  font-size: 5rem;
+}
+
+.scheduleButton {
+}
+
+.scheduleButton:hover {
+  transform: scale(
+    1.2
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  /* opacity: 0.3; */
+  box-shadow: 0 0 3px #515151;
+  transition: all 0.5s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+.navbar-brand {
+  font-family: "Open Sans", sans-serif;
+}
+
+h2 {
+  color: #3046c5;
+}
+
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Media Query for devices withi coarse pointers and no hover functionality */
+
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
+header h1 {
+  color: #cec8ff;
+  text-shadow: 10px 10px #ff0000;
+}
+
+.site-footer {
+  padding: 20px 0;
+  background-color: #f6da79;
+}
+
+.aboutUs {
+  background-color: #add8e6;
+}
+
+.navbar {
+  background-color: white;
+}
+
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px;
+}
+
+section:before {
+  height: 54px;
+  content: "";
+  display: block;
+}
+
+.paddingFix {
+  padding-top: 100px;
+  margin-top: 100px;
+}
+
+.priceObj {
+  border: none;
+  outline: none;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.priceObj:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.priceObj:active {
+  color: #000;
+}
+
+.priceObj:active:after {
+  background: transparent;
+}
+
+.priceObj:hover:before {
+  opacity: 1;
+}
+
+.priceObj:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  50% {
+    background-position: 400% 0;
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    background-position: 0 0;
   }
 }

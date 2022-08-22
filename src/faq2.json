@@ -1,0 +1,22 @@
+[
+  {
+    "id": 5,
+    "question": "What type of detergent do you use?",
+    "answer": "We use Tide and All Free and Clear."
+  },
+  {
+    "id": 6,
+    "question": "I'm ready for my pick-up. How can i schedule it?",
+    "answer": "Schedule a pickup on our webapp here."
+  },
+  {
+    "id": 7,
+    "question": "What if I don't have a laundry bag?",
+    "answer": "If you do not have a laundry bag, please place your clothes in empty garbage or plastic bags. We do"
+  },
+  {
+    "id": 8,
+    "question": "Do you sell laundry bags?",
+    "answer": "Yes, we do. You can purchase a laundry bag for $6."
+  }
+]
