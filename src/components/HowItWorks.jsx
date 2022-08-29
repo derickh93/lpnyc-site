@@ -18,7 +18,9 @@ function HowItWorks() {
           <HowObj
             img={howOne}
             title={"1. Schedule"}
-            des={"Click schedule to place your pickup. You can customize"}
+            des={
+              "Place your order with us at a day and time of your choice. Book online or with our mobile app."
+            }
           />
         </Col>
         <Col>
@@ -27,7 +29,7 @@ function HowItWorks() {
             img={howTwo}
             title={"2. Prepare"}
             des={
-              "Set your laundry outside for pick up. (Machine-dry in one bag, hang-dry in another.)"
+              "Pack your clothes into a laundry bag (or a sealed bag). Use one bag per service (laundry in one bag, dry cleaning in another). "
             }
           />
         </Col>
@@ -37,7 +39,7 @@ function HowItWorks() {
             img={howThree}
             title={"3. Done"}
             des={
-              "Your laundry will be picked up, washed, dried, folded, and returned to you the next day."
+              "Our driver will collect your bags and take them to a partner laundry facility. We will clean your clothes with care and deliver them to you next-day. "
             }
           />
         </Col>

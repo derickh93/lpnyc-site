@@ -1,8 +1,16 @@
-import React, { useRef } from "react";
+import React, { useState } from "react";
 import axios from "axios";
+import { Container, Col, Row } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
 
 function ServiceArea() {
-  const zipRef = useRef();
+  const [zip, setZip] = useState();
+
+  function onSubmit() {
+    console.log(zip);
+    checkZip();
+  }
 
   function checkGeo() {
     if ("geolocation" in navigator) {
@@ -25,40 +33,59 @@ function ServiceArea() {
     });
   }
 
-  async function checkZip(e) {
+  async function checkZip() {
     checkGeo();
     getLoc();
     getCurrentPos();
-    if (e.key === "Enter") {
-      const result = await axios.get(
-        //https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=
-        `https://maps.googleapis.com/maps/api/geocode/json?address=${zipRef.current.value}&key=AIzaSyD3yGLqukoZeisoeXn6w843r79zgEwfeHo`
-      );
-      console.log(
-        JSON.stringify(result.data.results[0].address_components) +
-          " " +
-          JSON.stringify(result.data.results[0].geometry)
-      );
-    }
+    const result = await axios.get(
+      //https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=
+      `https://maps.googleapis.com/maps/api/geocode/json?address=${zip}&key=${process.env.GOOGLE_API_KEY}`
+    );
+    console.log(
+      JSON.stringify(result.data.results[0].address_components) +
+        " " +
+        JSON.stringify(result.data.results[0].geometry)
+    );
   }
 
   return (
-    <div className="container p-3 mb-5">
-      <div className="col-12" id="how">
-        <h3 className="text-center pt-1">Service Area</h3>
-        <div className="vstack gap-3 d-flex align-items-center">
-          <div>Confirm that LPNYC services your area.</div>
-          <input
-            type="text"
-            id="zip"
-            name="zip"
-            placeholder="Enter Zip Code"
-            ref={zipRef}
-            onKeyDown={(e) => checkZip(e)}
-          />
-        </div>
-      </div>
-    </div>
+    <Container>
+      <Row>
+        <Col id="how">
+          <h3 className="text-center pt-1 mt-5">Service Area</h3>
+          <div className="vstack gap-3 d-flex align-items-center">
+            {/* <input
+              type="text"
+              className="rounded shadow-lg bg-white acc"
+              id="zip"
+              name="zip"
+              placeholder="Enter Zip Code"
+              ref={zipRef}
+              onKeyDown={(e) => checkZip(e)}
+            /> */}
+            <Form>
+              <Form.Group
+                className="mb-3 rounded shadow-lg bg-white acc"
+                controlId="formZip"
+              >
+                <Form.Control
+                  type="text"
+                  placeholder="Zip Code"
+                  // value={zip}
+                  onChange={(e) => setZip(e.target.value)}
+                />
+              </Form.Group>
+              <Form.Text className="text-muted">
+                Enter your zipcode to confirm that LPNYC services your area.
+              </Form.Text>
+              <Button variant="primary" type="submit" onClick={onSubmit}>
+                Submit
+              </Button>
+            </Form>
+          </div>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 

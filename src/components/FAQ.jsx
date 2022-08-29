@@ -9,13 +9,13 @@ import Col from "react-bootstrap/esm/Col";
 function FAQ() {
   return (
     <Container id="faq">
-      <h3 className="text-center">FAQ</h3>
+      <h3 className="text-center pt-1 mt-5">FAQ</h3>
       <Row className="d-flex flex-row justify-content-center">
-        <Col>
+        <Col xs={6}>
           {" "}
           <AccordionObj faq={faq} />
         </Col>
-        <Col>
+        <Col xs={6}>
           {" "}
           <AccordionObj faq={faq2} />
         </Col>

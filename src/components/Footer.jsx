@@ -3,15 +3,19 @@ import { Name } from "../js/Vars";
 import { FaTwitter, FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
 import PrivacyModal from "../modal/PrivacyModal";
 import TermsModal from "../modal/TermsModal";
+import Container from "react-bootstrap/esm/Container";
+import Row from "react-bootstrap/esm/Row";
+import Col from "react-bootstrap/esm/Col";
 
 function Footer() {
   const [modalPrivacyShow, setModalPrivacyShow] = React.useState(false);
   const [modalTermShow, setModalTermShow] = React.useState(false);
 
   return (
-    <div className="site-footer">
-      <div className="row">
-        <div className="col-12 col-6 col-sm-3 text-center">
+    <Container className="site-footer">
+      <hr />
+      <Row>
+        <Col sm={3} className="text-center">
           <PrivacyModal
             show={modalPrivacyShow}
             onHide={() => setModalPrivacyShow(false)}
@@ -45,8 +49,8 @@ function Footer() {
           >
             <FaYoutube />
           </a>
-        </div>
-        <div className="col col-12 col-sm-6 text-center">
+        </Col>
+        <Col sm={6} className="text-center">
           <a
             className="text-dark"
             id="privacyButton"
@@ -74,9 +78,9 @@ function Footer() {
             </a>
             <br />
           </p>
-        </div>
-      </div>
-    </div>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
