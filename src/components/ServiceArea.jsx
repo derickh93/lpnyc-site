@@ -5,26 +5,28 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 
 function ServiceArea() {
-  const [zip, setZip] = useState();
+  const [zip, setZip] = useState(" ");
+  const [lat, setLat] = useState(null);
+const [lng, setLng] = useState(null);
+const [status, setStatus] = useState(null);
 
-  function onSubmit() {
-    console.log(zip);
+  function onSubmit(e) {
+    e.preventDefault();
     checkZip();
   }
-
-  function checkGeo() {
-    if ("geolocation" in navigator) {
-      console.log("Available");
+  const getLocation = () => {
+    if (!navigator.geolocation) {
+      setStatus('Geolocation is not supported by your browser');
     } else {
-      console.log("Not Available");
+      setStatus('Locating...');
+      navigator.geolocation.getCurrentPosition((position) => {
+        setStatus(null);
+        setLat(position.coords.latitude);
+        setLng(position.coords.longitude);
+      }, () => {
+        setStatus('Unable to retrieve your location');
+      });
     }
-  }
-
-  function getLoc() {
-    navigator.geolocation.getCurrentPosition(function (position) {
-      console.log("Latitude is :", position.coords.latitude);
-      console.log("Longitude is :", position.coords.longitude);
-    });
   }
 
   function getCurrentPos() {
@@ -34,12 +36,9 @@ function ServiceArea() {
   }
 
   async function checkZip() {
-    checkGeo();
-    getLoc();
-    getCurrentPos();
     const result = await axios.get(
       //https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=
-      `https://maps.googleapis.com/maps/api/geocode/json?address=${zip}&key=${process.env.GOOGLE_API_KEY}`
+      `https://maps.googleapis.com/maps/api/geocode/json?address=${this.state.zip}&key=${process.env.GOOGLE_API_KEY}`
     );
     console.log(
       JSON.stringify(result.data.results[0].address_components) +
@@ -48,21 +47,16 @@ function ServiceArea() {
     );
   }
 
+  function handleChange(event) {
+    this.setState({zip: event.target.value});
+  }
+
   return (
     <Container>
       <Row>
         <Col id="how">
           <h3 className="text-center pt-1 mt-5">Service Area</h3>
           <div className="vstack gap-3 d-flex align-items-center">
-            {/* <input
-              type="text"
-              className="rounded shadow-lg bg-white acc"
-              id="zip"
-              name="zip"
-              placeholder="Enter Zip Code"
-              ref={zipRef}
-              onKeyDown={(e) => checkZip(e)}
-            /> */}
             <Form>
               <Form.Group
                 className="mb-3 rounded shadow-lg bg-white acc"
@@ -71,9 +65,8 @@ function ServiceArea() {
                 <Form.Control
                   type="text"
                   placeholder="Zip Code"
-                  // value={zip}
-                  onChange={(e) => setZip(e.target.value)}
-                />
+                 // value={zip}
+                 onChange={handleChange}                 />
               </Form.Group>
               <Form.Text className="text-muted">
                 Enter your zipcode to confirm that LPNYC services your area.

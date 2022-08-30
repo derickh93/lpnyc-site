@@ -1,21 +1,19 @@
 import React from "react";
 import logo from "../img/logo.PNG";
-import Container from "react-bootstrap/Container";
-import Col from "react-bootstrap/Col";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+import {Container,Col,Nav,Row,Navbar} from "react-bootstrap";
+
 
 function NavBar() {
   return (
-    <div>
+    <Container>
+
       <Navbar bg="white" expand="sm">
-        <Container fluid>
           <Col className="d-flex justify-content-between">
             <img
               alt="Laundry Pickup NYC Logo"
               src={logo}
-              height="35%"
-              width="35%"
+              height="45%"
+              width="45%"
             />
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
           </Col>
@@ -30,9 +28,9 @@ function NavBar() {
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
-        </Container>
       </Navbar>
-    </div>
+      </Container>
+
   );
 }
 

@@ -1,11 +1,12 @@
 import React from "react";
 import Button from "react-bootstrap/esm/Button";
-import Container from "react-bootstrap/esm/Container";
+import {Container,Row,Col} from "react-bootstrap/";
 
 function Schedule() {
   return (
     <Container fluid>
-      <div className="col-12 text-center" id="schedule">
+      <Row>
+      <Col className="text-center" id="schedule">
         <Button
           className="scheduleButton"
           style={{
@@ -20,7 +21,8 @@ function Schedule() {
             Schedule Now
           </a>
         </Button>
-      </div>
+      </Col>
+      </Row>
     </Container>
   );
 }
