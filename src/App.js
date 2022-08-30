@@ -10,8 +10,12 @@ import Footer from "./components/Footer";
 import ServiceArea from "./components/ServiceArea";
 import ScrollToTop from "react-scroll-to-top";
 import NavBar from "./components/NavBar";
-import { Fade } from "react-reveal";
+// import { Fade } from "react-reveal";
 import Container from "react-bootstrap/Container";
+
+function Fade(props) {
+  return <div className="my-fade">{props.children}</div>;
+}
 
 function App() {
   return (

@@ -59,18 +59,32 @@ function ServiceArea() {
           <div className="vstack gap-3 d-flex align-items-center">
             <Form onSubmit={onSubmit}>
               <Form.Group
-                className="mb-3 rounded shadow-lg bg-white acc"
+                className="mb-3 rounded shadow bg-white acc"
                 controlId="formZip"
               >
                 <Form.Control type="text" placeholder="Zip Code" ref={zipRef} />
               </Form.Group>
-              <Form.Text className="text-muted">
-                Enter your zipcode to confirm that LPNYC services your area.
-              </Form.Text>
-              <Button variant="primary" type="submit">
-                Submit
-              </Button>
-              {distance <= 10 && <h1>Congratulation we service your area</h1>}
+              <Form.Group className="d-flex flex-column align-items-center">
+                <Form.Text className="text-muted">
+                  Enter your zipcode to confirm that LPNYC services your area.
+                </Form.Text>
+                <Button
+                  variant="primary"
+                  type="submit"
+                  className="scheduleButton"
+                  style={{
+                    backgroundColor: "#1c2f74",
+                  }}
+                >
+                  Submit
+                </Button>
+                {distance <= 10 && distance > 0 && (
+                  <h1>Congratulation we service your area</h1>
+                )}
+                {distance > 10 && (
+                  <h1>Unfortunately we are not in your area yet</h1>
+                )}
+              </Form.Group>
             </Form>
           </div>
         </Col>

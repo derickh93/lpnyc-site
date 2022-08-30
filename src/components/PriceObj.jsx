@@ -3,7 +3,7 @@ import Accordion from "react-bootstrap/Accordion";
 
 function PriceObj(props) {
   return (
-    <div className="d-flex flex-column align-items-center mb-5 p-2 priceObj shadow-lg">
+    <div className="d-flex flex-column align-items-center mb-5 p-2 priceObj shadow">
       <img alt="price" src={props.img} height="50px" width="50px"></img>
       <p>{props.title}</p>
       <p>{props.description}</p>

@@ -7,7 +7,7 @@ function AccordionObj(props) {
       {props.faq.map((item) => {
         return (
           <div key={item.id}>
-            <Accordion className="rounded shadow-lg bg-white text-break">
+            <Accordion className="rounded shadow bg-white text-break">
               <Accordion.Item eventKey={item.id}>
                 <Accordion.Header>{item.question}</Accordion.Header>
                 <Accordion.Body>{item.answer}</Accordion.Body>
