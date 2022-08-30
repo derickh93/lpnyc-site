@@ -10,7 +10,6 @@ import Footer from "./components/Footer";
 import ServiceArea from "./components/ServiceArea";
 import ScrollToTop from "react-scroll-to-top";
 import NavBar from "./components/NavBar";
-// import { Fade } from "react-reveal";
 import Container from "react-bootstrap/Container";
 
 function Fade(props) {
@@ -20,36 +19,36 @@ function Fade(props) {
 function App() {
   return (
     <Container fluid>
-      <Fade duration={5000}>
+      <Fade>
         <NavBar />
       </Fade>
-      <Fade duration={5000}>
+      <Fade>
         <Header />
       </Fade>
-      <Fade duration={5000}>
+      <Fade>
         <Schedule />
       </Fade>
-      <Fade duration={5000}>
+      <Fade>
         <HowItWorks />
       </Fade>
-      <Fade duration={5000}>
+      <Fade>
         <Pricing />
       </Fade>
-      <Fade duration={5000}>
+      <Fade>
         <ServiceArea />
       </Fade>
       <Fade>
         <FAQ />
       </Fade>
-      <Fade duration={5000}>
+      <Fade>
         {" "}
         <About />
       </Fade>
-      <Fade duration={5000}>
+      <Fade>
         {" "}
         <Clients />
       </Fade>
-      <Fade duration={5000}>
+      <Fade>
         {" "}
         <Footer />
       </Fade>
