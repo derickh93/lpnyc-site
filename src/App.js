@@ -9,7 +9,6 @@ import Clients from "./components/Clients";
 import Footer from "./components/Footer";
 import ServiceArea from "./components/ServiceArea";
 import ScrollToTop from "react-scroll-to-top";
-import NavBar from "./components/NavBar";
 import Container from "react-bootstrap/Container";
 
 function Fade(props) {
@@ -19,9 +18,6 @@ function Fade(props) {
 function App() {
   return (
     <Container fluid>
-      <Fade>
-        <NavBar />
-      </Fade>
       <Fade>
         <Header />
       </Fade>

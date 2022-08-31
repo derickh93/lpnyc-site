@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import axios from "axios";
-import { Container, Col, Row } from "react-bootstrap";
+import { Container, Col, Row,Alert} from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 
@@ -11,10 +11,19 @@ function ServiceArea() {
   const lat = 40.720421;
   const long = -73.743233;
   const [distance, setDistance] = useState();
+  const [error, setError] = useState(false);
+
 
   function onSubmit(e) {
     e.preventDefault();
-    checkZip();
+    if(zipRef.current.value.length !== 5 || !isNumeric(zipRef.current.value)){
+      setDistance(0)
+      setError(true);
+    }
+    else {
+      setError(false);
+      checkZip();
+    }
   }
 
   function encode(array, ...splat) {
@@ -51,6 +60,12 @@ function ServiceArea() {
     setDistance(haversine(start, end));
   }
 
+  function isNumeric(str) {
+    if (typeof str != "string") return false // we only process strings!  
+    return !isNaN(str) && // use type coercion to parse the _entirety_ of the string (`parseFloat` alone does not do this)...
+           !isNaN(parseFloat(str)) // ...and ensure strings of whitespace fail
+  }
+
   return (
     <Container>
       <Row>
@@ -78,12 +93,15 @@ function ServiceArea() {
                 >
                   Submit
                 </Button>
-                {distance <= 10 && distance > 0 && (
-                  <h1>Congratulation we service your area</h1>
+                <div className="pt-3">                {distance <= 10 && distance > 0 && (
+                  <Alert variant="success">Congratulation we service your area</Alert>
+
                 )}
                 {distance > 10 && (
-                  <h1>Unfortunately we are not in your area yet</h1>
+                 <Alert variant="danger">Unfortunately we are not in your area yet</Alert>
                 )}
+                {error && <Alert variant="danger">Please enter your 5 digit zipcode</Alert>}</div>
+
               </Form.Group>
             </Form>
           </div>

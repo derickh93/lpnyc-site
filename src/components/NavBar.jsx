@@ -1,7 +1,9 @@
+import "../App.css";
 import React from "react";
 import logo from "../img/logo.PNG";
 import { Container, Col, Nav, Navbar } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
+
 
 function NavBar() {
   return (
@@ -18,10 +20,16 @@ function NavBar() {
         </Col>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto text-nowrap">
-            <Nav.Link href="#how">How It Works</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-            <Nav.Link href="#schedule">Schedule</Nav.Link>
-            <Nav.Link href="#faq">FAQ</Nav.Link>
+            <Nav.Link>          <HashLink smooth to="/#how" style={{ color: 'black' }}>
+              How It Works          </HashLink>
+            </Nav.Link>
+
+            <Nav.Link href="/#pricing/"><HashLink smooth to="/#pricing" style={{ color: 'black' }}>Pricing </HashLink>
+            </Nav.Link>
+            <Nav.Link href="/#schedule/"><HashLink smooth to="/#schedule" style={{ color: 'black' }}>Schedule </HashLink>
+            </Nav.Link>
+            <Nav.Link href="/#faq/"><HashLink smooth to="/#faq" style={{ color: 'black' }}>FAQ </HashLink>
+            </Nav.Link>
             <Nav.Link
               onClick={(event) => {
                 event.preventDefault();

@@ -10,7 +10,8 @@ function Pricing() {
     <Container id="pricing">
       <h3 className="text-center pt-1 mt-5">Pricing</h3>
       <Row className="font-italic">
-        <Col sm={3}>
+        <Col sm={3}
+          xs={12} >
           <PriceObj
             img={basket}
             title={"Wash"}
@@ -21,7 +22,8 @@ function Pricing() {
           />
         </Col>
 
-        <Col sm={3}>
+        <Col           sm={3}
+          xs={12}>
           <PriceObj
             img={laundry}
             title={"Wash & Press"}
@@ -31,7 +33,8 @@ function Pricing() {
             link={"/WashPress"}
           />
         </Col>
-        <Col sm={3}>
+        <Col           sm={3}
+          xs={12}>
           <PriceObj
             img={dryClean}
             title={"Dry Cleaning"}
@@ -41,7 +44,8 @@ function Pricing() {
             link={"/DryClean"}
           />
         </Col>
-        <Col sm={3}>
+        <Col           sm={3}
+          xs={12}>
           <PriceObj
             img={laundry}
             title={"Bulky Items"}

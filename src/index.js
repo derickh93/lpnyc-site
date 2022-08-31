@@ -7,11 +7,13 @@ import Bulky from "./routes/Bulky";
 import DryClean from "./routes/DryClean";
 import Wash from "./routes/Wash";
 import WashPress from "./routes/WashPress";
+import NavBar from "./components/NavBar";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+    <NavBar/>
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="Bulky" element={<Bulky />} />
