@@ -7,7 +7,6 @@ function About() {
       <h3 className="text-center pt-1 mt-5">About Us</h3>
       <Row className="row">
         <Col sm={9}>
-          <h4>Our love for clean clothes shines bright!</h4>
           <p>
             We know that not everyone enjoys doing laundry but we’re pretty sure
             that everyone loves clean clothes. That's why we’ve made it our

@@ -4,7 +4,7 @@ import { FaChevronRight } from "react-icons/fa";
 
 function PriceObj(props) {
   return (
-    <div className="d-flex flex-column justify-content-center align-items-center p-1 priceObj shadow h-100">
+    <div className="d-flex flex-column justify-content-center align-items-center p-1 priceObj shadow m-1">
          <Link to={props.link} style={{ color: 'black' }}>
       <div>
         <div className="d-flex flex-column align-items-center">

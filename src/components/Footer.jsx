@@ -1,6 +1,6 @@
 import React from "react";
 import { Name } from "../js/Vars";
-import { FaTwitter, FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
+import { FaTwitter, FaFacebook } from "react-icons/fa";
 import PrivacyModal from "../modal/PrivacyModal";
 import TermsModal from "../modal/TermsModal";
 import Container from "react-bootstrap/esm/Container";
@@ -24,30 +24,19 @@ function Footer() {
             show={modalTermShow}
             onHide={() => setModalTermShow(false)}
           />
+          {/* {laundrypickupnyc@gmail.com} */}
           <h5>Social</h5>
           <a
-            className="btn btn-social-icon btn-instagram"
-            href="http://instagram.com/"
-          >
-            <FaInstagram />
-          </a>
-          <a
             className="btn btn-social-icon btn-facebook"
-            href="http://facebook.com/"
+            href="https://www.facebook.com/waglaundry"
           >
             <FaFacebook />
           </a>
           <a
             className="btn btn-social-icon btn-twitter"
-            href="http://twitter.com/"
+            href="https://twitter.com/washgolaundry"
           >
             <FaTwitter />
-          </a>
-          <a
-            className="btn btn-social-icon btn-google"
-            href="http://youtube.com/"
-          >
-            <FaYoutube />
           </a>
         </Col>
         <Col sm={6} className="text-center">
