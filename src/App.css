@@ -35,7 +35,7 @@ a:active {
   ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   /* opacity: 0.3; */
   box-shadow: 0 0 3px #515151;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 h1,
