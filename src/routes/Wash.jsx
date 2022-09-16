@@ -29,6 +29,19 @@ function Wash() {
           <p>$32.85</p>
         </ListGroup.Item>
       </ListGroup>
+      
+      <div>
+        <div>Can’t find your item? Ask our team. </div>
+
+        <div>
+          Not sure how much you have? One load of 6kg is about: 7 shirts + 3
+          trousers + 7 underwear + 7 pairs of socks
+        </div>
+      </div>
+
+      <div>
+        Curious which clothes are suitable for washing? Check service details
+      </div>
     </Container>
   );
 }

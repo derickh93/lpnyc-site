@@ -41,6 +41,10 @@ function ServiceArea() {
     const result = await axios.get(
       encode`https://maps.googleapis.com/maps/api/geocode/json?address=${zipRef.current.value}&key=${process.env.REACT_APP_GOOGLE_API_KEY}`
     );
+    if(result.data.status == "ZERO_RESULTS") {
+      setDistance(0)
+      setError(true);    }
+    else {
     let custLat = JSON.stringify(
       result.data.results[0].geometry.bounds.northeast.lat
     );
@@ -58,6 +62,7 @@ function ServiceArea() {
     };
 
     setDistance(haversine(start, end));
+  }
   }
 
   function isNumeric(str) {
@@ -100,7 +105,8 @@ function ServiceArea() {
                 {distance > 10 && (
                  <Alert variant="danger">Unfortunately we are not in your area yet</Alert>
                 )}
-                {error && <Alert variant="danger">Please enter your 5 digit zipcode</Alert>}</div>
+                {error && <Alert variant="danger">Please enter a valid 5 digit zipcode</Alert>}
+                </div>
 
               </Form.Group>
             </Form>

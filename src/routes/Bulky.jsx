@@ -7,6 +7,12 @@ function Bulky() {
       <h3>Duvets & Bulky Items</h3>
       <p>For larger items that require extra care.</p>
       <h6>CUSTOM CLEANING</h6>
+      <ListGroup horizontal>
+      <ListGroup.Item>This</ListGroup.Item>
+      <ListGroup.Item>ListGroup</ListGroup.Item>
+      <ListGroup.Item>renders</ListGroup.Item>
+      <ListGroup.Item>horizontally!</ListGroup.Item>
+    </ListGroup>
       <ListGroup variant="flush">
         <ListGroup.Item>
           Mixed wash (up to 15 lbs)
@@ -29,6 +35,7 @@ function Bulky() {
           <p>$32.85</p>
         </ListGroup.Item>
       </ListGroup>
+
 
       <div>
         <div>Can’t find your item? Ask our team. </div>
