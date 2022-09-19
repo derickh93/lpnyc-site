@@ -8,10 +8,12 @@ function Bulky() {
       <p>For larger items that require extra care.</p>
       <h6>CUSTOM CLEANING</h6>
       <ListGroup horizontal>
-      <ListGroup.Item>This</ListGroup.Item>
-      <ListGroup.Item>ListGroup</ListGroup.Item>
-      <ListGroup.Item>renders</ListGroup.Item>
-      <ListGroup.Item>horizontally!</ListGroup.Item>
+      <ListGroup.Item>Feather comforters</ListGroup.Item>
+      <ListGroup.Item>Synthetic comforters</ListGroup.Item>
+      <ListGroup.Item>Blankets & Bedspreads</ListGroup.Item>
+      <ListGroup.Item>Pillows</ListGroup.Item>
+      <ListGroup.Item>Mattress pads</ListGroup.Item>
+
     </ListGroup>
       <ListGroup variant="flush">
         <ListGroup.Item>

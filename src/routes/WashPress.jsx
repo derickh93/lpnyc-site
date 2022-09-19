@@ -11,10 +11,20 @@ function WashPress() {
       <h6>WASH + TUMBLE-DRY + IRONING + ON HANGERS
 </h6>
 <ListGroup horizontal>
-      <ListGroup.Item>This</ListGroup.Item>
-      <ListGroup.Item>ListGroup</ListGroup.Item>
-      <ListGroup.Item>renders</ListGroup.Item>
-      <ListGroup.Item>horizontally!</ListGroup.Item>
+      <ListGroup.Item>Shirts</ListGroup.Item>
+      <ListGroup.Item>Tops</ListGroup.Item>
+      <ListGroup.Item>Bottom</ListGroup.Item>
+      <ListGroup.Item>Dresses</ListGroup.Item>
+      <ListGroup.Item>Outerwear</ListGroup.Item>
+      <ListGroup.Item>Acccessories & Homewear</ListGroup.Item>
+      <ListGroup.Item>Bed Sheets</ListGroup.Item>
+      <ListGroup.Item>Duvet Covers</ListGroup.Item>
+      <ListGroup.Item>Pillow cases</ListGroup.Item>
+      <ListGroup.Item>Bathroom items</ListGroup.Item>
+      <ListGroup.Item>Dining</ListGroup.Item>
+
+
+
     </ListGroup>
       <ListGroup variant="flush">
         <ListGroup.Item>
@@ -38,12 +48,6 @@ function WashPress() {
           <p>$32.85</p>
         </ListGroup.Item>
       </ListGroup>
-      <ListGroup horizontal>
-      <ListGroup.Item>This</ListGroup.Item>
-      <ListGroup.Item>ListGroup</ListGroup.Item>
-      <ListGroup.Item>renders</ListGroup.Item>
-      <ListGroup.Item>horizontally!</ListGroup.Item>
-    </ListGroup>
       
       <div>
         <div>Can’t find your item? Ask our team. </div>

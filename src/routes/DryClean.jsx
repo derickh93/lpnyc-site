@@ -8,10 +8,17 @@ function DryClean() {
       <p>For delicate items and fabrics.</p>
       <h6>DRY CLEANING + IRONING + ON HANGERS</h6>
       <ListGroup horizontal>
-      <ListGroup.Item>This</ListGroup.Item>
-      <ListGroup.Item>ListGroup</ListGroup.Item>
-      <ListGroup.Item>renders</ListGroup.Item>
-      <ListGroup.Item>horizontally!</ListGroup.Item>
+      <ListGroup.Item>Shirts</ListGroup.Item>
+      <ListGroup.Item>Tops</ListGroup.Item>
+      <ListGroup.Item>Bottoms</ListGroup.Item>
+      <ListGroup.Item>Suits</ListGroup.Item>
+      <ListGroup.Item>Dresses</ListGroup.Item>
+      <ListGroup.Item>Outerwear</ListGroup.Item>
+      <ListGroup.Item>Acccessories & Homewear</ListGroup.Item>
+      <ListGroup.Item>Bed Sheets</ListGroup.Item>
+      <ListGroup.Item>Duvet Covers</ListGroup.Item>
+      <ListGroup.Item>Pillow cases</ListGroup.Item>
+      <ListGroup.Item>Bathroom items</ListGroup.Item>
     </ListGroup>
       <ListGroup variant="flush">
         <ListGroup.Item>

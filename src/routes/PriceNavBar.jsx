@@ -9,6 +9,7 @@ import Wash from "./Wash";
 import WashPress from "./WashPress";
 import DryClean from "./DryClean";
 import Bulky from "./Bulky";
+import Footer from "../components/Footer";
 
 function PriceNavBar(props) {
   const [active, setActive] = useState("wash");
@@ -77,6 +78,7 @@ function PriceNavBar(props) {
       {active == "press" && <WashPress />}
       {active == "dry" && <DryClean />}
       {active == "bulky" && <Bulky />}
+      <Footer/>
     </Container>
   );
 }
