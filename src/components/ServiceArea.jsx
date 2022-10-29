@@ -41,7 +41,7 @@ function ServiceArea() {
     const result = await axios.get(
       encode`https://maps.googleapis.com/maps/api/geocode/json?address=${zipRef.current.value}&key=${process.env.REACT_APP_GOOGLE_API_KEY}`
     );
-    if(result.data.status == "ZERO_RESULTS") {
+    if(result.data.status === "ZERO_RESULTS") {
       setDistance(0)
       setError(true);    }
     else {
