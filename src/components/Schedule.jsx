@@ -17,7 +17,7 @@ function Schedule() {
           }}
         >
           {" "}
-          <a className="text-white" href="http://lpnycweb.netlify.app">
+          <a className="text-white" href="https://lpdayweb.netlify.app/">
             Schedule Now
           </a>
         </Button>

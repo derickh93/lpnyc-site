@@ -1,27 +1,42 @@
 [
   {
     "id": 0,
-    "question": "How do i sign up?",
-    "answer": "Simply click the schedule button to create an account and get started."
+    "question": "What services do you provide?",
+    "answer": "We provide wash and fold, wash and press and dry-cleaning services."
   },
   {
     "id": 1,
-    "question": "What are your prices?",
-    "answer": "Check out our price list here."
+    "question": "What does a pickup include?",
+    "answer": "Wash, Dry + Fold "
   },
   {
     "id": 2,
-    "question": "What form of payments do you accept?",
-    "answer": "We accept cash on delivery and credit cards(Visa,Mastercard, American Express, Discover)."
+    "question": "Is there a minimum?",
+    "answer": "You can send as little or as much clothing as you would like but the lowest price we charge per order is $30."
   },
   {
     "id": 3,
-    "question": "How do I schedule a collection?",
-    "answer": "Simply click the schedule button to create an account and get started. If you are a new customer you can book your first order at https://lpnyc.netlify.app or via our mobile app (available for iOS and Android). Just follow the on-screen instructions and you'll have clean laundry in no-time!"
+    "question": "I won't be home at the time of pickup. Can I place my laundry outside?",
+    "answer": "Yes, you can leave your clothes outside of your home for pickup - just let us know at the time of scheduling. You can use laundry or disposable bags as long as the bag can fully close at the top. We do not recommend using a clothes hamper so please let us know in your notes at the time of scheduling if you do not have a laundry/disposable bag for your pickup."
   },
   {
     "id": 4,
-    "question": "How much does your service cost?",
-    "answer": "The price is $1.25/ LB. There is a $25 minimum."
+    "question": "What days do you pick up/deliver?",
+    "answer": "Laundry Pickup Day offers service 7 days a week."
+  },
+  {
+    "id": 5,
+    "question": "Will my driver come to my door for the pickup/delivery?",
+    "answer": "Our driver will ring your bell/knock on your door/call you when they are outside to pickup your laundry. If you would prefer to leave the laundry outside for a contactless pickup, that is fine. Please let us know in your scheduling notes."
+  },
+  {
+    "id": 6,
+    "question": "Oops! I wasn't available for today's pickup. What happens now?",
+    "answer": "We can reschedule a missed pickup for the next business day. However, if our driver arrives and is not able to collect your laundry we will charge a surcharge fee of $5. "
+  },
+  {
+    "id": 7,
+    "question": "Do I have to separate lights and darks?",
+    "answer": "Nope! We can do a mixed wash or we can separate the clothes for you. Choose which option works best when you schedule your order."
   }
 ]

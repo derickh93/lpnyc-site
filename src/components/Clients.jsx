@@ -17,7 +17,7 @@ function Clients() {
           className="d-flex flex-column justify-content-center align-items-center"
         >
           <p className="d-flex justify-content-start">
-            My clothes come back clean, week in and week out. Laundry Pickup is
+            My clothes come back clean, week in and week out. Laundry Pickup Day is
             awesome and reliable. We've recommended them to friends, and every
             time they are satisfied. We won't use anyone else!
           </p>
@@ -41,7 +41,7 @@ function Clients() {
         >
           {" "}
           <p className="d-flex justify-content-start">
-            My company is very happy with the service and I recommend LPNYC to
+            My company is very happy with the service and I recommend LPDay to
             anyone seeking professional dry cleaning service.
           </p>
           <div className="d-flex flex-column justify-content-end align-items-center">

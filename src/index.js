@@ -14,13 +14,9 @@ root.render(
     <NavBar/>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/pricing" element={<PriceNavBar/>} />
-
-        {/* <Route path="/pricing/wash" element={<Wash />} />
-        <Route path="/pricing/press" element={<WashPress />} />
-        <Route path="/pricing/dry" element={<DryClean />} />
-        <Route path="/pricing/bulky" element={<Bulky />} /> */}
-
+        <Route path="/pricing-wash" element={<PriceNavBar active={"wash"}/>} />
+        <Route path="/pricing-dry-clean" element={<PriceNavBar active={"dry-clean"}/>} />
+        <Route path="/pricing-bulky" element={<PriceNavBar active={"bulky"}/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

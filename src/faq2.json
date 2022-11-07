@@ -1,22 +1,42 @@
 [
   {
-    "id": 5,
-    "question": "What type of detergent do you use?",
-    "answer": "We use Tide and All Free and Clear."
-  },
-  {
-    "id": 6,
-    "question": "I'm ready for my pick-up. How can i schedule it?",
-    "answer": "Schedule a pickup on our webapp here."
-  },
-  {
-    "id": 7,
-    "question": "What if I don't have a laundry bag?",
-    "answer": "If you do not have a laundry bag, please place your clothes in empty garbage or plastic bags. We do"
-  },
-  {
     "id": 8,
-    "question": "Do you sell laundry bags?",
-    "answer": "Yes, we do. You can purchase a laundry bag for $6."
+    "question": "Do you use fabric softener?",
+    "answer": "Yes, we use fabric softener. If you request a scented detergent, we will use scented fabric softener. If you request non-scented detergent, we will use non-scented fabric softener."
+  },
+  {
+    "id": 9,
+    "question": "Do my clothes get mixed with other orders?",
+    "answer": "No, absolutely not. We keep your clothes together with your order at all times and never mix them with any other orders. We take special care for hygenic and sanitary cleaning. "
+  },
+  {
+    "id": 10,
+    "question": "Do you wash clothes cold or hot?",
+    "answer": "Clothes are washed at 90 degrees F unless requested at 110 degrees F. You can request this change at the time of scheduling your pickup under the additional instructions section."
+  },
+  {
+    "id": 11,
+    "question": "I have allergies. Can you use hypoallergenic products?",
+    "answer": "No problem! Select the unscented option and we will wash your clothes with unscented detergent and fabric softener at no additional charge."
+  },
+  {
+    "id": 12,
+    "question": "What if it is raining the day of my delivery?",
+    "answer": "We will still be able to deliver your order as usual if it is raining. We can leave the order outside, if necessary, under a dry tarp."
+  },
+  {
+    "id": 13,
+    "question": "What time do you pick up and deliver?",
+    "answer": "Our drivers collect and deliver the clothing daily between the hours of 5-9 pm."
+  },
+  {
+    "id": 14,
+    "question": "What if my clothes are lost or damaged?",
+    "answer": "It's extremely rare for clothes to be lost or damaged as all orders are labeled and handled with care. There is no part of the process that is unique to laundering your clothes at home that would cause damage or loss. For dry-clean services, we use expert facilities that treat your items as delicately as possible. In the rare event items are lost or damaged, please bring this to our attention within 24 hours of delivery. "
+  },
+  {
+    "id": 15,
+    "question": "Is my identity and payment information protected?",
+    "answer": "All contact and payment information and correspondence is handled through a secure system to keep your information private and safe. We do not sell or share your information for any reason. Your privacy is important to us and we protect it with care."
   }
 ]
