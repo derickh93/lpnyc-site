@@ -9,7 +9,7 @@ import Col from "react-bootstrap/esm/Col";
 function FAQ() {
   return (
     <Container id="faq">
-      <h3 className="text-center pt-1 mt-5">FAQ</h3>
+      <h2 className="text-center pt-1 mt-5">FAQ</h2>
       <Row className="d-flex flex-row justify-content-center">
         <Col xs={6}>
           {" "}

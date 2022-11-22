@@ -4,7 +4,7 @@ import {Container,Row,Col} from "react-bootstrap/";
 
 function Schedule() {
   return (
-    <Container fluid>
+    <Container fluid className="pt-3">
       <Row>
       <Col className="text-center" id="schedule">
         <Button
@@ -12,12 +12,11 @@ function Schedule() {
           style={{
             height: "60px",
             width: "250px",
-            fontSize: "30px",
             backgroundColor: "#1c2f74",
           }}
         >
           {" "}
-          <a className="text-white" href="https://lpdayweb.netlify.app/">
+          <a className="text-white" href="https://lpdayweb.netlify.app/" style={{fontSize: 30}}>
             Schedule Now
           </a>
         </Button>

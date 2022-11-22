@@ -11,9 +11,9 @@ function HowItWorks() {
   return (
     <Container id="how">
       <Row>
-        <h3 className="text-center pt-1 mt-5">How It Works</h3>
+        <h2 className="text-center pt-1 mt-5">How It Works</h2>
 
-        <Col>
+        <Col sm={4}>
           {" "}
           <HowObj
             img={howOne}
@@ -23,23 +23,23 @@ function HowItWorks() {
             }
           />
         </Col>
-        <Col>
+        <Col sm={4}>
           {" "}
           <HowObj
             img={howTwo}
             title={"2. Prepare"}
             des={
-              "Pack your clothes into a laundry bag (or a sealed bag). Use one bag per service (laundry in one bag, dry cleaning in another). "
+              "Pack your clothes into a laundry/sealed bag. Use one bag per service (laundry in one bag, dry cleaning in another)."
             }
           />
         </Col>
-        <Col>
+        <Col sm={4}>
           {" "}
           <HowObj
             img={howThree}
             title={"3. Done"}
             des={
-              "Our driver will collect your bags and take them to a partner laundry facility. We will clean your clothes with care and deliver them to you next-day. "
+              "Our driver will collect your bags and we will clean and deliver your clothes back to you the next day."
             }
           />
         </Col>

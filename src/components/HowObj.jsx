@@ -8,13 +8,13 @@ function HowObj(props) {
       <Figure className="d-flex justify-content-center flex-column text-center">
         <Figure.Image
           className="mx-auto rounded shadow-lg bg-white"
-          width={171}
-          height={180}
-          alt="171x180"
+          width={200}
+          height={200}
+          alt={props.title}
           src={props.img}
         />
-        <Figure.Caption>
-          <h6>{props.title}</h6>
+        <Figure.Caption >
+          <span style={{fontWeight: 'bold',fontSize:16, whitespace:"nowrap"}}>{props.title}</span>
           <br />
           {props.des}
         </Figure.Caption>

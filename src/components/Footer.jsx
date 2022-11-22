@@ -24,17 +24,17 @@ function Footer() {
             show={modalTermShow}
             onHide={() => setModalTermShow(false)}
           />
-          {/* {laundrypickupnyc@gmail.com} */}
+
           <h5>Social</h5>
           <a
             className="btn btn-social-icon btn-facebook"
-            href="https://www.facebook.com/waglaundry"
+            href="https://www.facebook.com/laundrypickupday"
           >
             <FaFacebook />
           </a>
           <a
             className="btn btn-social-icon btn-twitter"
-            href="https://twitter.com/washgolaundry"
+            href="https://twitter.com/wepickuplaundry"
           >
             <FaTwitter />
           </a>
@@ -46,7 +46,7 @@ function Footer() {
             href="#privacy"
             onClick={() => setModalPrivacyShow(true)}
           >
-            <u>PRIVACY POLICY</u>
+            <span><u>PRIVACY POLICY</u> </span>
           </a>
           |
           <a
@@ -55,7 +55,7 @@ function Footer() {
             href="#terms"
             onClick={() => setModalTermShow(true)}
           >
-            <u>TERMS OF SERVICE</u>
+            <span> <u>TERMS OF SERVICE</u></span>
           </a>
           <p className="text-dark">
             Copyright © 2022 | {Name}

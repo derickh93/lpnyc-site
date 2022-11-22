@@ -1,5 +1,9 @@
+* { 
+  font-size: 18px
+}
+
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Trebuchet MS', sans-serif;
 }
 
 a {
@@ -42,11 +46,7 @@ h1,
 h2,
 h3,
 .navbar-brand {
-  font-family: "Open Sans", sans-serif;
-}
-
-h2 {
-  color: #3046c5;
+  font-family: 'Trebuchet MS', sans-serif;
 }
 
 header {
@@ -263,3 +263,10 @@ input::-webkit-inner-spin-button {
 input[type=number]{
   -moz-appearance: textfield;
 }
+
+    /* Media Query for Mobile Devices */
+    @media (max-width: 480px) {
+      .header-text {
+          white-space: "wrap";
+      }
+  }

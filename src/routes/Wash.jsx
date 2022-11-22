@@ -33,7 +33,7 @@ function Wash() {
             style={{
               width: "20%",
               height: "20%",
-              fontSize: "12px",
+              fontSize: "14px",
               backgroundColor: "transparent",
               boxShadow: "none",
             }}

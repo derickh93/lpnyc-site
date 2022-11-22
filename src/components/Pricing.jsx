@@ -9,25 +9,24 @@ import { Row, Container, Col } from "react-bootstrap/";
 function Pricing() {
   return (
     <Container id="pricing">
-      <h3 className="text-center pt-1 mt-5">Pricing</h3>
-      <h6 className="text-center">Simple Pricing</h6>
-      <h6 className="text-center">No hidden fees.</h6>
-      <div >
-        {" "}
-        <div className="d-flex flex-row justify-content-between">
-          <div>
-            {" "}
-            <h6>Free 24h delivery</h6>
-          </div>
-          <div>
-            {" "}
-            <h6>$30 minimum order</h6>
-          </div>
-          <div>
-            <h6>$2.95 service fee</h6>
-          </div>
-        </div>
+      <h2 className="text-center pt-1 mt-5">Pricing</h2>
+      <div className="d-flex flex-column align-items-center">
+      <span>Simple Pricing</span>
+      <span>No hidden fees.</span>
       </div>
+
+      <hr/>
+
+      <div className="d-flex justify-content-between text-center">
+            <span class>Free delivery</span>
+            <div class="vr"></div>
+
+            <span>$30 minimum order</span>
+<div class="vr"></div>
+
+            <span>$2.95 service fee</span>
+        </div>
+        <hr/>
 
       <Row className="font-italic">
         <Col sm={4} xs={12}>

@@ -11,7 +11,7 @@ function Bulky() {
   }, []);
   return (
     <Container>
-      <h3>Duvets & Bulky Items</h3>
+      <h3>Bulky Items</h3>
       <p>For larger items that require extra care.</p>
       <h6>CUSTOM CLEANING</h6>
       {bulkyProd.map((item, idx) => (
@@ -33,7 +33,7 @@ function Bulky() {
             style={{
               width: "20%",
               height: "20%",
-              fontSize: "12px",
+              fontSize: "14px",
               backgroundColor: "transparent",
               boxShadow: "none",
             }}

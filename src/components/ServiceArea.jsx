@@ -158,7 +158,7 @@ function ServiceArea() {
     <Container>
       <Row>
         <Col id="how">
-          <h3 className="text-center pt-1 mt-5">Service Area</h3>
+          <h2 className="text-center pt-1 mt-5">Service Area</h2>
           <div className="vstack gap-3 d-flex align-items-center">
             <Form onSubmit={onSubmit}>
               <Form.Group
