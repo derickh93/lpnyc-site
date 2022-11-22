@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 import ServiceArea from "./components/ServiceArea";
 import ScrollToTop from "react-scroll-to-top";
 import Container from "react-bootstrap/Container";
-import TrustPilot from "./components/TrustPilot";
+// import TrustPilot from "./components/TrustPilot";
 
 function Fade(props) {
   return <div className="my-fade">{props.children}</div>;
