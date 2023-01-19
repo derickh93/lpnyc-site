@@ -5,14 +5,14 @@ import SandyD from "../img/SandyD.jpg";
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
-// import TrustPilot from "./TrustPilot";
+import TrustPilot from "./TrustPilot";
 
 function Clients() {
   return (
     <Container className="container" id="clients">
       <h2 className="text-center font-weight-bold">Our Happy Clients</h2>
 
-        {/* <TrustPilot /> */}
+        <TrustPilot />
       <Row className="font-italic">
         <Col
           sm={4}

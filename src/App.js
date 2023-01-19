@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 import ServiceArea from "./components/ServiceArea";
 import ScrollToTop from "react-scroll-to-top";
 import Container from "react-bootstrap/Container";
-// import TrustPilot from "./components/TrustPilot";
+import Mobile from "./components/Mobile";
 
 function Fade(props) {
   return <div className="my-fade">{props.children}</div>;
@@ -38,13 +38,14 @@ function App() {
         <FAQ />
       </Fade>
       <Fade>
-        {" "}
         <About />
       </Fade>
- 
       <Fade>
         {" "}
         <Clients />
+      </Fade>
+      <Fade>
+        <Mobile />
       </Fade>
       <Fade>
         {" "}
