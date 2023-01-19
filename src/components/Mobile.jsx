@@ -34,7 +34,7 @@ function Mobile() {
             <img src={PlayStore} alt="play store" width="100%" />
           </a>
         </Col>
-        <Col sm={4} className="d-flex justify-content-end">
+        <Col sm={4} className="d-flex justify-content-center">
           <img src={ScreenShot} alt="app screenshot" width="35%" />
         </Col>
       </Row>
