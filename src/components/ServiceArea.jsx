@@ -2304,7 +2304,9 @@ function ServiceArea() {
                 </div>
               </Form.Group>
             </Form>
+          <iframe title="Laundry Pickup Day Service Area" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d386947.629962733!2d-73.7399525!3d40.7394015!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x773657d6d0977934!2sLaundry%20Pickup%20Day!5e0!3m2!1sen!2sus!4v1674157044944!5m2!1sen!2sus" width="400" height="300" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
+        
         </Col>
       </Row>
     </Container>
