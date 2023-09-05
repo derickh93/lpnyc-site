@@ -58,7 +58,7 @@ function Footer() {
             <span> <u>TERMS OF SERVICE</u></span>
           </a>
           <p className="text-dark">
-            Copyright © 2022 | {Name}
+            Copyright © 2023 | {Name}
             <br />
             Website by
             <br />

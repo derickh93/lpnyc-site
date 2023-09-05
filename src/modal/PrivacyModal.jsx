@@ -336,7 +336,7 @@ export default function PrivacyModal(props) {
               <span>Any changes to our privacy policy will be posted to the Sites and,
               where appropriate, we will notify you of the changes for example
               by email or push notification. This privacy policy was last
-              updated: 11/21/2022</span>
+              updated: 09/01/2023</span>
               <h6>14. Complaints</h6>
               <span>If you’re not satisfied with our response to any complaint or
               believe our processing of your information does not comply with
