@@ -25,19 +25,6 @@ function Footer() {
             onHide={() => setModalTermShow(false)}
           />
 
-          <h5>Social</h5>
-          <a
-            className="btn btn-social-icon btn-facebook"
-            href="https://www.facebook.com/laundrypickupday"
-          >
-            <FaFacebook />
-          </a>
-          <a
-            className="btn btn-social-icon btn-twitter"
-            href="https://twitter.com/wepickuplaundry"
-          >
-            <FaTwitter />
-          </a>
         </Col>
         <Col sm={6} className="text-center">
           <a

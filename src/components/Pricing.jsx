@@ -34,8 +34,8 @@ function Pricing() {
             img={laundryMachine}
             title={"Wash"}
             description={"For everyday wear, towels and bedsheets"}
-            linkPriceUnit={"Price Per Weight"}
-            linkPrice={"From $32.85 /15lbs"}
+            linkPriceUnit={"Free Pickup & Delivery"}
+            linkPrice={"with $30 minimum"}
             link={"wash"}
           />
         </Col>
