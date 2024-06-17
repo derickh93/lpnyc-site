@@ -1,6 +1,5 @@
 import React from "react";
 import { Name } from "../js/Vars";
-import { FaTwitter, FaFacebook } from "react-icons/fa";
 import PrivacyModal from "../modal/PrivacyModal";
 import TermsModal from "../modal/TermsModal";
 import Container from "react-bootstrap/esm/Container";
